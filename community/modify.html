@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>전체게시물</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/spacing.css">
+  <link rel="stylesheet" href="../css/community.css">
+</head>
+<body>
+  <div id="wrap">
+    
+    <header>
+      <div class="header ">
+        <h1>
+          <a href="http://www.petcaremember.com"><img src="../img/logo.png" alt="PetCareFestival"></a>
+        </h1>
+        <button type="button" class="icon menu main-menu mr-42"></button>
+        <div class="popup main-menu-popup">
+          <ul>
+            
+              <li><a href="/member/logout">로그아웃</a></li>
+              <li><a href="/member/myinfo">내정보</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="mb-104">게시물 수정</h2>
+      <form action="#" id="submitform">
+        <fieldset>
+          <table class="tb join mx-57 mb-30" summary="이 표는 게시물 사진/동영상 내용에 대한 정보를 포함하고 있습니다.">
+            <caption class="skip">게시물 사진/동영상</caption>
+            <tbody>
+              <tr>
+                <th scope="row" class="pr-45 middle">사진/동영상</th>
+                <td>
+                  <div class="btn-lists">
+                    <button class="btn-rounded btn-large" style="background-image: url(http://placehold.it/142); background-size: 100% auto;"></button>
+                    <button  class="plus-button plus-button--large" style="background-size:90px  auto;"></button>
+                    <input type="file" accept="image/*" name="attachFile" id="attachFile1" style="display:none;">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mx-57 mb-63 pb-50 border-bottom"><span class="comment2">하나의 게시물에서 최대 10개의 사진과 동영상을 게시할 수 있습니다.</span></div>
+          <table class="tb join mx-57" summary="이 표는 게시물 문구 내용에 대한 정보를 포함하고 있습니다.">
+            <tr>
+              <th class="pr-45" scope="row">문구입력</th>
+              <td>
+                <textarea name="comment" class="input-box"></textarea>
+                <span class="byte-desc">0자/1,000자</span>
+              </td>
+            </tr>
+          </table>
+          <div class="mt-27 mx-57 align-right"><a href="#" class="btn-flat btn-delete"><img src="../img/boards/icon-trash.png"></a></div>
+        </fieldset>
+        
+        <div class="btn-box mt-150">
+            <button type="button" class="btn" onclick="javascript:history.back()">취소</button>
+            <button type="submit" class="btn">저장</button>
+        </div>
+      </form>
+    </div><!-- //.container -->
+  </div>
+</body>
+</html>

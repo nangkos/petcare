@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>전체게시물</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/spacing.css">
+  <link rel="stylesheet" href="../css/board.css">
+</head>
+<body>
+  <div id="wrap" class="pb-75">
+    
+    <header>
+      <div class="header ">
+        <h1>
+          <a href="http://www.petcaremember.com"><img src="../img/logo.png" alt="PetCareFestival"></a>
+        </h1>
+        <button type="button" class="icon menu main-menu mr-42"></button>
+        <div class="popup main-menu-popup">
+          <ul>
+            
+              <li><a href="/member/logout">로그아웃</a></li>
+              <li><a href="/member/myinfo">내정보</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="tabs">
+        <div class="tab-menus mb-27">
+          <div class="tab-menu">
+            <a href="./index.html">전체 게시물</a>
+          </div>
+          <div class="tab-menu active">
+            <a href="./my.html">마이 게시물</a>
+          </div>
+        </div><!-- //.tab-menus -->
+        <div class="tab-items">
+          <div class="card mb-75">
+            <div class="card-header pl-35 pr-42 mb-30">
+              <div class="float-box">
+                <div class="writer-box pull-left">
+                  <span class="avatar mr-27"><img src="http://placehold.it/85" /></span>
+                  <span class="writer">동길이맘</span>
+                </div>
+                <div class="sns pull-right">
+                  <a href="#"><img src="../img/boards/icon-inst.png" alt="instagram"></a>
+                  <a href="#"><img src="../img/boards/icon-facebook.png" alt="facebook"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-media mb-27">
+              <div class="carousel-inner">
+                <img src="http://placehold.it/1024x1022" alt="">
+              </div>
+              <div class="carousel-pagination">1/10</div>
+              <ol class="carousel-indicators">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div>
+            <div class="card-body px-42 mb-27">
+              <div class="float-box">
+                <span class="like button-box pull-left">
+                  <a href="#" class="btn-flat"><img src="../img/boards/icon-like.png" alt="unlike"> 좋아요 0개</a>
+                </span>
+                <span class="datetime button-box pull-right text-grey">
+                  2019.04.30 11:09:12
+                </span>
+              </div>
+              <div class="card-text mt-27">
+                  Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio ...
+                  <a href="" class="btn-flat text-grey ml-30">더보기</a>
+              </div>
+            </div><!-- //.card-body -->
+            <div class="comment px-42 mb-115">
+              <div class="float-box">
+                <div class="button-box pull-left">
+                  <a href="#" class="btn-flat text-grey"><img src="../img/boards/icon-comment.png" alt="comment">댓글 5개 모두보기</a>
+                </div>
+                <div class="pull-right">
+                  <a href="modify.html" class="btn-modify"><img src="../img/boards/btn-modify.png"></a>
+                </div>
+              </div>
+              <form action="#">
+                <div class="write-box mt-45">
+                  <span class="avatar mr-27"><img src="http://placehold.it/79" /></span>
+                  <textarea class="input-box" placeholder="댓글달기..."></textarea>
+                  <button class="btn btn-flat">게시</button>
+                </div>
+              </form>
+            </div>
+          </div><!-- //.card -->
+        </div><!-- //.tab-items -->
+      </div><!-- //.tabs -->
+    </div>
+  </div>
+  <a class="plus-button plus-button--large btn-floating"></a>
+</body>
+</html>

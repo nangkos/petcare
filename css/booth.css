@@ -1,0 +1,223 @@
+.card {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+.card table.info,
+.card table.join {width: 100%; max-width: 100%;}
+.card .info th,
+.card .info td { vertical-align: middle; text-align: left;}
+.card .info th {width: 199px;}
+
+.card table.join th { font-family: 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', 'Noto Sans', sans-serif; font-weight: 400; }
+
+.card b {
+  font-family: 'NanumBarunGothicBold', '맑은 고딕', 'Malgun Gothic', 'Noto Sans', sans-serif;
+}
+
+.card .content {
+  max-width: 100%;
+}
+
+.card .content ul.terms {padding: 0}
+.card .content ul.terms li { height: auto; }
+.card-header {
+  position: relative;
+  color: #5b5b5b;
+}
+
+
+.accordion .card-body {
+  height: 0px;
+  overflow: hidden;
+  transition: height .3s linear;
+}
+
+.card-text > p {
+  padding-left: 1.0em;
+  text-indent: -1.0em;
+  line-height: 1.8em;
+}
+
+
+.list-item {
+  position: relative;
+}
+
+.list-item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.list-item label {
+  display: block;
+  width: 26%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.list-item label:before {
+  content: '- ';
+  font-family: 'NanumBarunGothicBold', '맑은 고딕', 'Malgun Gothic', 'Noto Sans', sans-serif;
+  display: inline;
+}
+
+
+.list-item h4 {color: #2e2e2e;}
+
+.ticket {
+  position: relative;
+  z-index: 10;
+}
+.ticket .poster {
+  border-right: 1px dashed #c8c8c8;
+}
+.ticket:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -20px;
+  width: 20px;
+  height: 40px;
+  border-radius: 0 20px 20px 0;
+  background-color: #fff;
+}
+
+.ticket:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  width: 20px;
+  height: 40px;
+  border-radius: 20px 0 0 20px;
+  background-color: #fff;
+}
+.clear {
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.middle-dot {
+  padding-left: 30px;
+  background: transparent url('../img/booth/icon-middle-dot.png') no-repeat 0 50%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/** 폼요소 **/
+input.readonly {
+  border-color: #ccc;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: inherit;
+  color: #afafaf;
+  font-family: 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', 'Noto Sans', sans-serif;
+}
+
+.radio-box input[type="radio"] + label span img, input[type="checkbox"] + label span img {
+	width: 32px;
+	margin-top:22px;
+	vertical-align: baseline;
+	transition:opacity 0.3s ease;
+	opacity:0.5;
+	pointer-events: none;
+}
+
+.radio-box input[type="radio"] + label span, input[type="checkbox"] + label span {
+	line-height:44px;
+	display:inline-block;
+	width:68px;
+	height:68px;
+	margin:4px 4px 0 0;
+	cursor:pointer;
+	text-align:center;
+	vertical-align:top;
+	border:0;
+	border-radius:50%;
+	background-color:#dadada;
+	background-repeat:no-repeat;
+	background-position:center;
+	box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  margin-top: -.5em;
+}
+
+.radio-box input[type="radio"] + label, input[type="checkbox"] + label {
+	font-size: inherit;
+	padding-right:19px;
+	vertical-align: bottom;
+	color:#333;
+}
+
+.join button.btn {
+  height: auto;
+}
+
+.card table.join {margin-right: 0;}
+
+.join .btn-lists button {margin-left: 24px;}
+.join .btn-lists button:first {margin-left: 0;}
+
+.join.w-50 { width: 50% !important; display: table;}
+.join.w-60 { width: 60% !important; display: table;}
+.join.w-70 { width: 70% !important; display: table;}
+
+.btn-rounded {
+  border-radius: 50%;
+}
+.btn-large {
+  width: 142px;
+  height: 142px;
+}
+.plus-button--large {
+  width: 142px;
+  height: 142px;
+  background-color: #ff972f;
+  font-size: 64px;
+}
+
+.btn-block { display: block; width: 100%; margin: 0 !important; box-sizing: border-box; }
+
+@media (max-width: 1021px) {
+  .radio-box input[type="radio"] + label span img, input[type="checkbox"] + label span img {
+    width: 16px;
+    margin-top: 10px;
+    vertical-align: top;
+    transition:opacity 0.3s ease;
+    opacity:0.5;
+    pointer-events: none;
+  }
+  
+  .radio-box input[type="radio"] + label span, input[type="checkbox"] + label span {
+    line-height:44px;
+    display:inline-block;
+    width:32px;
+    height:32px;
+    margin:4px 4px 0 0;
+    cursor:pointer;
+    text-align:center;
+    vertical-align:top;
+    border:0;
+    border-radius:50%;
+    background-color:#dadada;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  
+  }
+}

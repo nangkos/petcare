@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>참가신청</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/spacing.css">
+  <link rel="stylesheet" href="../css/booth.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="header ">
+        <h1>
+          <a href="http://www.petcaremember.com"><img src="../img/logo.png" alt="PetCareFestival"></a>
+        </h1>
+        <button type="button" class="icon menu main-menu mr-42"></button>
+        <div class="popup main-menu-popup">
+          <ul>
+            
+              <li><a href="/member/logout">로그아웃</a></li>
+              <li><a href="/member/myinfo">내정보</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>
+        <img src="../img/section-title-1.png" class="dotol">
+        <b>부스참가신청</b>
+      </h1>
+      <form action="complete.html" method="post">
+      <div class="row px-45 pt-60 mt-50">
+          
+        <div class="card px-35 py-60 mb-60 round-all">
+          <div class="card-body">
+            <h3 class="font-35 gray-darken-4 mb-50 middle-dot"><b>행사개요</b></h3>
+            <div class="mb-75">
+              <table class="info">
+                  <tbody>
+                    <th class="pr-68">
+                      <img src="http://placehold.it/199x316" alt="">
+                    </th>
+                    <td>
+                      <ul class="list">
+                        <li class="list-item font-27 font-narrow gray-darken-3 mb-27"><label><b>행사명</b></label><span class="gray-darken-1">제11회 펫케어페스티벌</span></li>
+                        <li class="list-item font-27 font-narrow gray-darken-3 mb-27"><label><b>행사장소</b></label><span class="gray-darken-1">일산 벨라시타 지하 1층</span></li>
+                        <li class="list-item font-27 font-narrow gray-darken-3 mb-27"><label><b>행사일시</b></label><span class="gray-darken-1">2019.02.16(토)-17(일) / 11:00-18:00</span></li>
+                      </ul>
+                    </td>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        <div class="card px-35 py-60 mb-60 round-all">
+          <div class="card-body">
+            <h3 class="font-35 gray-darken-4 mb-35 middle-dot"><b>부스 신청 정보</b></h3>
+            <div class="card-text mb-86">
+              <fieldset>
+                <table class="tb join" summary="이 표는 부스신청 정보 입력 항목을 포함하고 있습니다.">
+                  <colgroup>
+                    <col style="width: 30%;">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">구분</th>
+                      <td class="py-15">
+                        <select name="" id="" class="w-25">
+                          <option value="">선택</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">부스 수</th>
+                      <td class="py-15">
+                        <select name="" id="" class="w-25">
+                          <option value="">선택</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15 line-1" scope="row">부스비<br><span class="font-21">(VAT포함)</span></th>
+                      <td class="py-15">
+                          <input type="text" class="font-23 py-35 readonly" readonly>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">면적</th>
+                      <td class="py-15">
+                        <input type="text" class="font-23 py-35 readonly" readonly>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">제공집기</th>
+                      <td class="py-15">
+                          <input type="text" class="font-23 py-35 readonly" readonly>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="font-23 gray-darken-1 line-2 py-27">
+                          ※ 행사일정, 장소, 부스 및 부대시설 신청 규모는 주최측 사정에 의해 변경 될 수 있습니다.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15 line-1" scope="row">추가의자<br><span class="font-21">(5,000원/개)</span></th>
+                      <td class="py-15">
+                          <select name="" id="" class="w-25">
+                            <option value="">선택</option>
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15 line-1" scope="row">총 납입액<br><span class="font-21">(VAT포함)</span></th>
+                      <td class="py-15">
+                          <input type="text" class="font-23 py-35 readonly" readonly>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">입금자명</th>
+                      <td class="py-15">
+                          <input type="text" class="font-23 py-35" placeholder="입금자명을 입력해 주세요.">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">납부계좌</th>
+                      <td class="font-35 py-15">
+                         우리은행 / 1005-303-086766
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="font-35 pr-68 py-15" scope="row">예금주</th>
+                      <td class="font-35 py-15">
+                        (주)펫케어
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="font-23 gray-darken-1 line-2 py-27">
+                        ※ 부스 배정 우선권은 총 납입액 입금(결제)순입니다. 참가신청 및 계약 효력 발생은 납입액이 입금(결제)된 시점으로 합니다.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="font-35">
+                        <div class="radio-box">
+                          <input type="radio" name="print" id="print-tax">
+                          <label for="print-tax" class="font-35">
+                            <span><img src="../img/check-icn.svg" alt="세금계산서 발행"></span>
+                            세금계산서 발행 요청
+                          </label>
+                        </div>
+                        <div class="radio-box ml-50">
+                          <input type="radio" name="print" id="print-cash">
+                          <label for="print-cash" class="font-35">
+                            <span><img src="../img/check-icn.svg" alt="현금영수증 발행"></span>
+                            현금영수증 발행 요청
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
+            </div>
+          </div>
+        </div><!-- //.card -->
+        <div class="card px-35 py-60 mb-60 round-all">
+          <div class="card-body">
+              <h3 class="font-35 gray-darken-4 mb-15 middle-dot"><b>부스 참가 셀러/제품 정보</b></h3>
+              <div class="gray-darken-1 font-23 mb-35">※ 본 정보는 주최측이 행사 홍보를 함에 있어 부스 참여업체의 홍보를 위해 사용됩니다.</div>
+              <div class="card-text mb-86">
+                <fieldset>
+                  <table class="tb join" summary="이 표는 부스 참가 셀러/제품 정보 입력 항목을 포함하고 있습니다.">
+                    <colgroup>
+                      <col style="width: 30%;">
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="font-23 pr-68 py-27" scope="row">
+                          <span class="check mr-10"></span><span >필수입력</span>
+                        </th>
+                        <td class="py-15">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15" scope="row">업체명<span class="check ml-15"></span></th>
+                        <td class="py-15">
+                          <input type="text" class="font-23 short  py-35" required placeholder="업체명을 입력하세요.">
+                          <button type="button" class="btn typ1 font-23  py-17">중복확인</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15" scope="row">브랜드명</th>
+                        <td class="py-15">
+                          <input type="text" class="font-23 py-35" placeholder="브랜드명을 입력하세요.">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15 line-2" scope="row">업체/브랜드<br>소개</th>
+                        <td class="py-15">
+                          <input type="text" class="font-23 py-35" placeholder="업체/브랜드 소개를 입력하세요.">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15 line-2" scope="row">제품<br>카테고리<span class="check ml-15"></span></th>
+                        <td class="py-15">
+                          <select name="" id="" class="w-49">
+                            <option value="">선택</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15" scope="row">품목<span class="check ml-15"></span></th>
+                        <td class="py-15">
+                          <input type="text" class="font-23 py-35" required placeholder="품목을 입력하세요.">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15" scope="row">제품사진<span class="check ml-15"></span></th>
+                        <td class="py-15">
+                          <div class="font-23 font-narrow gray-darken-2 mb-35">해당 제품의 특징이 잘 나온 사진을 올려주세요.</div>
+                          
+                          <div class="btn-lists">
+                            <button class="btn-rounded btn-large" style="background-image: url(http://placehold.it/142); background-size: 100% auto;"></button>
+                            <button  class="btn-rounded btn-large" style="background: url('../img/booth/btn-plus.png') no-repeat 50% 50%;"></button>
+                            <input type="file" accept="image/*" name="attachFile" id="attachFile1" style="display:none;">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15" scope="row">제품소개<span class="check ml-15"></span></th>
+                        <td class="py-15">
+                          <input type="text" class="font-23 py-35" required placeholder="제품소개를 입력하세요.">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="font-35 pr-68 py-15" scope="row">이벤트소개<span class="check ml-15"></span></th>
+                        <td class="py-15">
+                          <input type="text" class="font-23 py-35" required placeholder="행사에서 진행예정인 이벤트 소개를 입력하세요.">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="content mt-42">
+                    <div class="font-23 gray-darken-1 line-2 mb-35">
+                      ※ 당사는 본 참가신청이 참가신청 계약서와 동일함을 인식하며 상기와 같이 참가신청을 제출합니다.(단, 사정에 따라 행사 시간 등 세부적인 내용이 일부 조정될 수 있습니다.)
+                    </div>
+                    <ul class="terms">
+                      <li class="font-35 py-27 px-35 font-narrow">
+                        행사 참가 규정에 동의합니다.
+                        <div class="radio-box">
+                          <input type="checkbox" id="check-1" name="agree" value="true" class="toggleCheck" />
+                          <label for="check-1" class="font-23">
+                            <a href="#" class="user-term">내용보기</a>&nbsp;
+                            <span class="ml-27"><img src="../img/check-icn.svg" alt="행사 참가 규정에 동의"></span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <table class="tb join w-60 mt-75">
+                    <tbody>
+                      <tr>
+                          <th class="font-27 pr-35 py-15"></th>
+                          <td class="py-10">
+                            <div class="font-35 gray-darken-2 pull-right mb-15">2019년 2월 5일</div>
+                          </td>
+                      </tr>
+                      <tr>
+                        <th class="font-27 pr-35 py-15">참가업체명</th>
+                        <td class="py-10"><input type="text" class="font-23 py-35 readonly"></td>
+                      </tr>
+                      <tr>
+                        <th class="font-27 pr-35 py-15">대표자</th>
+                        <td class="py-10"><input type="text" class="font-23 py-35 readonly"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+              </div>
+          </div><!-- //.card-body -->
+        </div><!-- //.card -->
+        
+        <div class="btn-box bottom w-100">
+            <button type="button" class="btn font-23 py-27 height-auto" onclick="javascript:history.back()">취소</button>
+            <button type="submit" class="btn font-23 py-27 height-auto">참가신청</button>
+        </div>
+      </div><!-- //.row -->
+      </form><!-- //form -->
+    </div><!-- //.container-->
+  </div><!--//#wrap-->
+</body>
+</html>

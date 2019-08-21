@@ -1,0 +1,8 @@
+.container.ticket h1 {
+  height: auto;
+  max-height: 100%;
+}
+
+.container.ticket h1 > img {
+  position: relative;
+}

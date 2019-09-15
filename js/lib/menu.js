@@ -8,7 +8,7 @@ $(function() {
             closeClass: 'close-popup',
             opacity: 0.4,
             follow: [false, false], //x, y
-            position: ["50%","52px"] //x, y
+            position: ["0","52px"] //x, y
 
         });
     });

@@ -73,10 +73,24 @@ header * {
 	left:7px;
 }
 
+
 .header .menu:before {
 	width:32px;
 	height:32px;
 	background-position:0 0;
+}
+
+
+.header > .alarm {
+	right: 7px;
+}
+
+.header .alarm.icon:before {
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/bell.png) !important;
+	background-size: contain;
+
 }
 
 .header .icon:before {

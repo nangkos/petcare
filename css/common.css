@@ -70,7 +70,7 @@ header * {
 }
 
 .header > .menu {
-	right:7px;
+	left:7px;
 }
 
 .header .menu:before {

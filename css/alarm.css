@@ -1,0 +1,36 @@
+header {
+  border-bottom: none;
+  background-color: #ff972f;
+  color: #fff;
+}
+
+.header {
+  max-width: 1024px; overflow: hidden;
+}
+
+.header > .icon.previous {
+  left: 47px;
+}
+.header > .icon.config {
+  right: 47px;
+}
+.header > .icon:before {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+}
+
+.header > .icon.previous:before {
+  background-image: url(../img/icon/btn-left.png);
+}
+
+.header > .icon.config:before {
+  background-image: url(../img/icon/icon-config.png);
+}
+
+.card {
+  width: 100%; max-width: 1024px; margin: 0 auto;
+  position: relative;
+}
+
+.card img { width: 100%; }

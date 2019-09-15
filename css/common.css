@@ -1725,6 +1725,7 @@ input#addrDetail {
 .gray-darken-3-1 {color: #525050;}
 .gray-darken-5 {color: #353535;}
 .gray-darken-6 {color: #242424;}
+.gray-darken-6-1 {color: #2e2e2e;}
 .gray-darken-4 {color: #171717;}
 
 .bg-gray { background-color: rgb(244, 244, 244) !important;}
@@ -1789,6 +1790,10 @@ input#addrDetail {
 	border-color: transparent;
 	background: #efefef url(../img/community/search_search.png) no-repeat 35px 50%;
 }
+
+.text-center { text-align: center; }
+.img-button { width: 100%; }
+.img-button.w-700 { max-width: 700px;}
 
 @media screen and (max-width: 1021px) {
 	#main .main-image {padding-bottom: 67.089%;}

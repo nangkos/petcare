@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>알람 설정</title>
+  <title>알람 삭제</title>
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/spacing.css">
   <link rel="stylesheet" href="../css/alarm.css">
@@ -13,36 +13,40 @@
   <div id="wrap">
     <header>
       <div class="header">
-        <h1>설정</h1>
+        <h1>알림 삭제</h1>
         <button type="button" class="icon previous"></button>
         <button type="button" class="icon config"></button>
       </div>
     </header>
     <div class="container">
+      <header>
+        <div class="toolbar py-27 px-47 w-100">
+          <button type="button" class="btn round bg-primary">전체선택</button>
+          <button type="button" class="btn round bg-outline">취소</button>
+        </div>
+      </header>
       <form action="#" novalidate>
         <fieldset>
-          <legend class="font-31 px-47 py-35 w-100 gray-darken-6-2">권한설정</legend>
           <div class="bg-white">
             
             <div class="form-group w-100 px-47 py-45 pr-160">
               <label class="font-35 gray-darken-6-2">푸시 알림</label>
-              <label class="switch">
-                <input type="checkbox" checked>
-                <span class="slider round"></span>
-              </label>
             </div>
             <div class="w-100 horizontal px-47"><hr></div>
-            <div class="form-group w-100 px-47 py-45 pr-160">
-              <label class="font-35 gray-darken-6-2">프로모션/이벤트 알림 수신</label>
-              <label class="switch">
+            <div class="form-group w-100 pl-110 pr-160 py-45">
+              <label class="checkbox">
                 <input type="checkbox">
-                <span class="slider round"></span>
+                <span class="checkmark"></span>
               </label>
+              <h4 class="font-33 gray-darken-6-2">[제 12회 펫케어페스티벌 #미스댕냥이] 미스댕냥이 &lt;바캉스룩 편&gt;미스댕냥이 미스댕냥이</h4>
+              <a href="#" class="more"></a>
             </div>
           </div>
         </fieldset>
       </form>
     </div>
+    <!-- //.container -->
   </div>
+  <!-- //#wrap -->
 </body>
 </html>

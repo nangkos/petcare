@@ -23,6 +23,8 @@
 .pr-68 {padding-right: 68px !important;}
 .pr-75 {padding-right: 75px !important;}
 
+.pr-160 {padding-right: 160px !important;}
+
 
 .pt-8 {padding-top: 8px !important;}
 .pt-10 {padding-top: 10px !important;}
@@ -53,9 +55,12 @@
 .px-35 {padding-left: 35px !important; padding-right: 35px !important;}
 .px-42 {padding-left: 42px !important; padding-right: 43px !important;}
 .px-45 {padding-left: 45px !important; padding-right: 45px !important;}
+.px-47 {padding-left: 47px !important; padding-right: 47px !important;}
 .px-50 {padding-left: 50px !important; padding-right: 50px !important;}
 .px-60 {padding-left: 60px !important; padding-right: 60px !important;}
 .px-75 {padding-left: 75px !important; padding-right: 75px !important;}
+.px-100 {padding-left: 100px !important; padding-right: 100px !important;}
+.px-160 {padding-left: 160px !important; padding-right: 160px !important;}
 
 .py-8 {padding-top: 8px !important; padding-bottom: 8px !important;}
 .py-10 {padding-top: 10px !important; padding-bottom: 10px !important;}
@@ -253,6 +258,7 @@
   .px-35,
   .px-42,
   .px-45,
+  .px-47,
   .px-50 {padding-left: 15px !important; padding-right: 15px !important;}
   .px-60,
   .px-75 {padding-left: 20px !important; padding-right: 20px !important;}

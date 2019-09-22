@@ -38,6 +38,8 @@
 <link rel="stylesheet" href="./css/common.css"/>
 <link rel="stylesheet" href="./css/lib/jquery.bxslider.css"/>
 <link rel="stylesheet" href="./css/petcare.css"/>
+<link rel="stylesheet" href="./css/spacing.css"/>
+<link rel="stylesheet" href="./css/alarm-aside.css"/>
 <script src="./js/lib/es6-promise.min.js"></script>
 <script src="./js/lib/es6-promise.auto.min.js"></script>
 </head>
@@ -49,7 +51,7 @@
 
 
 <header>
-	<div class="header ">
+	<section class="header ">
 		<h1>
 			<a href="http://www.petcaremember.com"><img src="./img/logo.png" alt="PetCareFestival"></a>
 		</h1>
@@ -64,7 +66,43 @@
 				
 			</ul>
 		</div>
-		<button class="icon alarm"></button>
+		<button type="button" class="icon alarm" title="알림"></button>
+		<aside id="alarm-aside">
+			<section class="alarm-wrap">
+				<div class="header">
+					<h2 >알림</h2>
+					<button type="button" class="icon previous"></button>
+					<button type="button" class="icon config"></button>
+				</div>
+				<section class="text-left bg-gray" style="display: flex; align-items: center;">
+					<div class="selectbox-wrap w-60">
+						<button type="button" class="selectbox-button text-left px-46 py-27">전체</button>
+						<nav class="selectbox-items">
+							<ul>
+								<li><button type="button">전체</button></li>
+								<li><button type="button">안내</button></li>
+								<li><button type="button">프로모션/이벤트</button></li>
+								<li><button type="button">시스템공지</button></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //.selectbox -->
+					<span class="span"></span>
+					<a href="./alarm/delete.html" class="btn round bg-outline">삭제</a>
+				</section>
+				
+				<div class="bg-white">
+					<div class="form-group w-100 pl-45 pr-160 py-45">
+						<h4 class="font-33 gray-darken-6-2">[제 12회 펫케어페스티벌 #미스댕냥이] 미스댕냥이 &lt;바캉스룩 편&gt;미스댕냥이 미스댕냥이</h4>
+						<div class="font-21 gray-darken-1-1 mt-15">2019-05-31 13:04:21</div>
+						<a href="./alarm/detail.html" class="chevron"></a>
+					</div>
+					<div class="w-100 horizontal px-47"><hr></div>
+					<!-- 알림이 없는 경우 아래 주석 해제 -->
+					<!-- <div class="v-center font-35 gray-darken-1-2">새로운 알림이 없습니다.</div> -->
+				</div>
+			</section>
+		</aside>
 	</div>
 </header>
     <div class="main-image">
@@ -100,7 +138,56 @@
 	
 	<script src="/js/petcareweb/pet/main.js?v=20190527075601500"></script>
 
+<script>
+(function (doc) {
+	doc.querySelector('button.alarm').addEventListener('click', function (e) {
+		e.preventDefault();
 
+		doc.querySelector('#alarm-aside').className += 'active';
+	});
+	doc.querySelector('button.config').addEventListener('click', function (e) {
+		e.preventDefault();
+
+		location.href = './alarm/config.html';
+	});
+
+	doc.querySelector('#alarm-aside button.previous').addEventListener('click', function (e) {
+		e.preventDefault();
+
+		var _target = doc.querySelector('#alarm-aside');
+		_target.className = _target.className.replace(/\bactive\b/, '');
+	});
+	doc.querySelector('.selectbox-button').addEventListener('click', function (e) {
+		e.preventDefault();
+
+		var _self = e.target,
+			_wrap = _self.parentNode;
+		
+		if (/\bexpand\b/.test(_wrap.className)) {
+			_wrap.className = _wrap.className.replace(/\bexpand\b/, '');
+		} else {
+			_wrap.className += ' expand';
+		}
+	});
+	doc.querySelector('.selectbox-button').addEventListener('blur', function (e) {
+		e.preventDefault();
+		var _self = e.target,
+			_wrap = _self.parentNode;
+		window.setTimeout(function () {
+			_wrap.className = _wrap.className.replace(/\bexpand\b/, '');
+		}, 300);
+		
+	});
+
+
+	doc.querySelectorAll('.selectbox-items button').forEach(function (button) {
+		button.addEventListener('click', function (e) {
+			e.preventDefault();
+
+		});
+	});
+}(document))
+</script>
 
 </body>
 </html>

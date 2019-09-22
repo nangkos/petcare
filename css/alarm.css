@@ -1,3 +1,5 @@
+html, body { height: 100%; }
+#wrap {height: 100%;}
 header {
   border-bottom: none;
   background-color: #ff972f;
@@ -98,7 +100,7 @@ header {
   left: 0;
   width: 32px;
   height: 32px;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -111,7 +113,7 @@ header {
 
 .checkbox .checkmark:after {
   left: 9px;
-  top: 3px;
+  top: 2px;
   width: 8px;
   height: 16px;
   border: solid #ff972f;
@@ -130,9 +132,109 @@ header {
   display: block;
 }
 
+
+.switch {
+	/* position: relative; */
+	display: inline-block;
+	width: 118px;
+	height: 63px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 1;
+	height: 1;
+}
+
+.switch > .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.switch > .slider:before {
+	position: absolute;
+	content: '';
+	height: 51px;
+	width: 51px;
+	left: 6px;
+	bottom: 6px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.switch > input:checked + .slider {
+	background-color: #ff972f;
+}
+
+.switch > input:focus + .slider {
+	box-shadow: 0 0 1px #ff972f;
+}
+
+.switch > input:checked + .slider:before {
+	-webkit-transform: translateX(54px);
+	-ms-transform: translateX(54px);
+	transform: translateX(54px);
+}
+
+.slider.round {
+	border-radius: 63px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+
+.chevron {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: solid #ccc;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
 .form-group .checkbox {
   position: absolute;
   left: 47px;
   top: 50%;
   margin-top: -16px;
+}
+
+.form-group .chevron {
+  position: absolute;
+  top: 50%;
+  right: 47px;
+  margin-top: -14px;
+}
+
+.btn-block { display: block; width: 100%; }
+.btn-gray { background-color: #b7b7b7; color: #fff;}
+.btn-primary { background-color: #ff972f !important; color: #fff !important;}
+
+.fixed { position: fixed; }
+.fixed.bottom { bottom: 0; }
+
+.h-100 {
+  position: relative;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.v-center {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%);
 }

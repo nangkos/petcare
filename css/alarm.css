@@ -238,3 +238,97 @@ header {
   left: 50%;
   transform: translate(-50%);
 }
+
+
+.modal-wrap {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+  transition: all 0.3s cubic-bezier(0.66, -0.01, 0.3, 0.99);
+  -webkit-transform: translateX(105vw);
+  transform: translateX(105vw);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 2500;
+}
+.modal-wrap.active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.modal-wrap .alert {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2501;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding-top: 120px !important;
+  font-weight: 700;
+}
+
+.alert:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 125px;
+  height: 228px;
+  left: 50%;
+  top: 0;
+  background: transparent url(../img/icon/icon-alert.png) no-repeat 50% 50%;
+  background-size: contain;
+  transform: translate(-50%, -60%);
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group > .custom-button {
+  flex: 1 1 50%;
+  font-weight: 700;
+  padding: 10px;
+  border-top: 2px solid #bfbfbf;
+  border-left: 2px solid #bfbfbf;
+  box-sizing: border-box;
+}
+
+.button-group > .custom-button:first-child {
+  border-left-width: 0;
+}
+
+@media screen and (max-width: 1052px) {
+  .font-31,
+  .font-40 {
+    font-size: 24px !important;
+  }
+
+  .modal-wrap .alert {
+    padding-top: 100px !important;
+  }
+  .alert:before {
+    width: 100px;
+    height: 182px;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .font-31,
+  .font-40 {
+    font-size: 18px !important;
+  }
+  .modal-wrap .alert {
+    padding-top: 80px !important;
+  }
+  .alert:before {
+    width: 75px;
+    height: 137px;
+  }
+ }

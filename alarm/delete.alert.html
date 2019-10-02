@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>알람 삭제</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/spacing.css">
+  <link rel="stylesheet" href="../css/alarm.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="header">
+        <h1>알림 삭제</h1>
+        <button type="button" class="icon previous"></button>
+        <button type="button" class="icon config"></button>
+      </div>
+    </header>
+    <div class="container">
+      <header>
+        <div class="toolbar py-27 px-47 w-100">
+          <button type="button" class="btn round bg-primary">전체선택</button>
+          <button type="button" class="btn round bg-outline">취소</button>
+        </div>
+      </header>
+      <form action="#" novalidate>
+        <fieldset>
+          <div class="bg-white">
+            <div class="form-group w-100 pl-110 pr-160 py-45">
+              <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <h4 class="font-33 gray-darken-6-2">[제 12회 펫케어페스티벌 #미스댕냥이] 미스댕냥이 &lt;바캉스룩 편&gt;미스댕냥이 미스댕냥이</h4>
+              <div class="font-21 gray-darken-1-1 mt-15">2019-05-31 13:04:21</div>
+              <a href="#" class="chevron"></a>
+            </div>
+            <div class="w-100 horizontal px-47"><hr></div>
+            <div class="form-group w-100 pl-110 pr-160 py-45">
+              <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <h4 class="font-33 gray-darken-6-2">[제 12회 펫케어페스티벌 #미스댕냥이] 미스댕냥이 &lt;바캉스룩 편&gt;미스댕냥이 미스댕냥이</h4>
+              <div class="font-21 gray-darken-1-1 mt-15">2019-05-31 13:04:21</div>
+              <a href="#" class="chevron"></a>
+            </div>
+          </div>
+        </fieldset>
+        <button type="button" class="btn-block fixed bottom font-44 py-35 btn-gray btn-primary"><strong>삭제하기</strong></button>
+          <!-- 선택한 항목이 있는경우 .btn-primary 추가 (toggle)-->
+      </form>
+    </div>
+    <!-- //.container -->
+  </div>
+  <!-- //#wrap -->
+  <!-- active(toggle) -->
+  <div class="modal-wrap active">
+    <div class="alert round-all pa-35">
+      <p class="font-31 gray-darken-3-1 mb-30">선택하신 항목을 삭제하시겠습니까?</p>
+      <div class="button-group">
+        <button type="button" class="custom-button font-40 gray-darken-5-1">아니오</button>
+        <button type="button" class="custom-button font-40 gray-darken-5-1">네</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

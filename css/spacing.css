@@ -182,12 +182,13 @@
 .font-19 {font-size: 19.39px !important;}
 .font-21 {font-size: 21.32px !important;}
 .font-23 {font-size: 23.53px !important; line-height: 1.6; letter-spacing: -1px;}
-.font-27 {font-size: 27.46px !important; line-height: 1.6}
-.font-30 {font-size: 30.29px !important; line-height: 1.6}
-.font-31 {font-size: 31.42px !important; line-height: 1.6}
-.font-33 {font-size: 33.66px !important; line-height: 1.6}
-.font-35 {font-size: 35.03px !important; line-height: 1.6}
-.font-44 {font-size: 44.29px !important; line-height: 1.6}
+.font-27 {font-size: 27.46px !important; line-height: 1.6;}
+.font-30 {font-size: 30.29px !important; line-height: 1.6;}
+.font-31 {font-size: 31.42px !important; line-height: 1.6;}
+.font-33 {font-size: 33.66px !important; line-height: 1.6;}
+.font-35 {font-size: 35.03px !important; line-height: 1.6;}
+.font-40 {font-size: 40.04px !important; line-height: 1.6;}
+.font-44 {font-size: 44.29px !important; line-height: 1.6;}
 
 .font-narrow { letter-spacing: -1px;}
 
@@ -387,7 +388,9 @@
   .font-30,
   .font-31 {font-size: 21px !important;}
   .font-33,
-  .font-35 {font-size: 24px !important;}
+  .font-35,
+  .font-40,
+  .font-44 {font-size: 24px !important;}
 
 }
 @media (max-width: 768px) { }
